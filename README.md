@@ -52,7 +52,7 @@ robustness: [results/sensitivity.md](results/sensitivity.md)
 Requires Python 3.10 or newer. The simulator uses only the standard library; charts need matplotlib.
 
 ```bash
-git clone https://github.com/<your-team>/lastseen-rescue.git
+git clone https://github.com/tiggerpei123/lastseen-rescue.git
 cd lastseen-rescue
 pip install -r requirements.txt
 
