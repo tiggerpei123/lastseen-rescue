@@ -1,0 +1,123 @@
+{
+  "config": {
+    "rooms_per_side": 8,
+    "room_spacing_m": 4.0,
+    "first_door_m": 4.0,
+    "corridor_width_m": 2.0,
+    "move_speed_mps": 0.5,
+    "room_search_s": 40.0,
+    "time_limit_s": 1200.0,
+    "min_victims": 2,
+    "max_victims": 5,
+    "p_seen_on_cctv": 0.6,
+    "seen_before_door_max_m": 6.0,
+    "cctv_position_noise_m": 1.0,
+    "p_heading_correct": 0.85,
+    "prior_ahead_m": 3.0,
+    "prior_sigma_m": 3.0,
+    "base_rate_per_room": 0.08,
+    "p_thermal_detect": 0.85,
+    "p_k9_alert_true": 0.6,
+    "p_k9_alert_false": 0.05
+  },
+  "scenarios": 1000,
+  "start_seed": 0,
+  "summary": {
+    "nearest": {
+      "scenarios": 1000,
+      "victims": 3485,
+      "first_victim_mean_s": 230.596,
+      "each_victim_mean_s": 486.7190817790531,
+      "all_victims_median_s": 736.0,
+      "not_found_in_time": 225,
+      "seen_victim_mean_s": 484.44836025452764,
+      "unseen_victim_mean_s": 489.9361997226075
+    },
+    "nearest_k9": {
+      "scenarios": 1000,
+      "victims": 3485,
+      "first_victim_mean_s": 231.968,
+      "each_victim_mean_s": 466.9164992826399,
+      "all_victims_median_s": 736.0,
+      "not_found_in_time": 84,
+      "seen_victim_mean_s": 462.3220753793441,
+      "unseen_victim_mean_s": 473.4257975034674
+    },
+    "lastseen": {
+      "scenarios": 1000,
+      "victims": 3485,
+      "first_victim_mean_s": 124.292,
+      "each_victim_mean_s": 325.4370157819225,
+      "all_victims_median_s": 512.0,
+      "not_found_in_time": 11,
+      "seen_victim_mean_s": 271.37738619676946,
+      "unseen_victim_mean_s": 402.0277392510402
+    },
+    "lastseen_no_cctv": {
+      "scenarios": 1000,
+      "victims": 3485,
+      "first_victim_mean_s": 170.14,
+      "each_victim_mean_s": 383.7233859397418,
+      "all_victims_median_s": 584.0,
+      "not_found_in_time": 11,
+      "seen_victim_mean_s": 381.8247674987763,
+      "unseen_victim_mean_s": 386.4133148404993
+    }
+  },
+  "comparisons": [
+    {
+      "vs": "nearest",
+      "first_victim_pct_faster": 46.099672153896854,
+      "first_victim_ci95": [
+        43.47450768815754,
+        48.58858364862642
+      ],
+      "each_victim_pct_faster": 33.1365816617695,
+      "each_victim_ci95": [
+        31.257823388411566,
+        34.79852195679458
+      ],
+      "all_victims_pct_faster": 30.434782608695652,
+      "first_victim_wins": 624,
+      "first_victim_ties": 192,
+      "first_victim_losses": 184,
+      "scenarios": 1000
+    },
+    {
+      "vs": "nearest_k9",
+      "first_victim_pct_faster": 46.41847151331218,
+      "first_victim_ci95": [
+        43.81002144105511,
+        48.936704621567316
+      ],
+      "each_victim_pct_faster": 30.3008104699841,
+      "each_victim_ci95": [
+        28.565472733450775,
+        32.08251684166399
+      ],
+      "all_victims_pct_faster": 30.434782608695652,
+      "first_victim_wins": 626,
+      "first_victim_ties": 191,
+      "first_victim_losses": 183,
+      "scenarios": 1000
+    },
+    {
+      "vs": "nearest",
+      "first_victim_pct_faster": 26.217280438515854,
+      "first_victim_ci95": [
+        23.77976934337844,
+        28.48951534279624
+      ],
+      "each_victim_pct_faster": 21.161220033297646,
+      "each_victim_ci95": [
+        19.622211064810422,
+        22.74012245288434
+      ],
+      "all_victims_pct_faster": 20.652173913043477,
+      "first_victim_wins": 543,
+      "first_victim_ties": 324,
+      "first_victim_losses": 133,
+      "scenarios": 1000
+    }
+  ]
+}
