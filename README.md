@@ -177,8 +177,8 @@ alerts, and a test with every network switched off. See [docs/stage2_plan.md](do
 
 ## Team
 
-LastSeen team — 獨孤魚 · 駱沛妤 (Sophie Lo). Contact: `<team email>`.
+LastSeen team — 獨孤魚 · 駱沛妤 (Sophie Lo). Contact: sophiepeiylo@gmail.com.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+© 2026 LastSeen team. All rights reserved. Shared for evaluation in the ASUS UGen AI League 2026.
