@@ -32,14 +32,14 @@ Entry for the **ASUS UGen AI League 2026 — Battlefield Lightning (Workplace AI
 - **Where the gain comes from:** people a camera saw before the smoke are found in 271 s instead of 484 s.
   People no camera saw: 402 s instead of 490 s.
 
-![Benchmark chart](results/benchmark_chart.png)
+![Benchmark chart](benchmark_chart.png)
 
-Full tables: [results/summary.md](results/summary.md) · per-fire data: [results/per_scenario.csv](results/per_scenario.csv) ·
-robustness: [results/sensitivity.md](results/sensitivity.md)
+Full tables: [results/summary.md](summary.md) · per-fire data: [results/per_scenario.csv](per_scenario.csv) ·
+robustness: [results/sensitivity.md](sensitivity.md)
 
 ### One example fire
 
-![Example scenario](results/example_map.png)
+![Example scenario](example_map.png)
 
 *Scenario 7, chosen because it shows the mechanism clearly; across all fires LastSeen is sometimes slower
 (see the counts above).* Current practice starts at the nearest rooms and reaches the first person after
@@ -129,7 +129,7 @@ All assumptions are in one file, [lastseen_sim/config.py](lastseen_sim/config.py
 
 ### Does the result depend on our assumptions?
 
-[results/sensitivity.md](results/sensitivity.md) changes one assumption at a time (500 fires each).
+[results/sensitivity.md](sensitivity.md) changes one assumption at a time (500 fires each).
 LastSeen stays faster to the first victim in every setting tested, from **26%** (no CCTV at all, or a
 small 8-room floor) to **55%** (a 24-room floor). The gain grows with CCTV coverage and building size.
 
@@ -167,7 +167,8 @@ run_example.py         draws one scenario
 plots.py               charts
 tests/test_sim.py      basic checks
 docs/                  architecture, model plan, Stage II plan
-results/               generated outputs (committed so judges can read them without running code)
+*.png, summary.md, per_scenario.csv, sensitivity.md   benchmark outputs (committed so judges can read them without running code;
+                       re-running the scripts writes fresh copies to results/)
 ```
 
 ## Roadmap
